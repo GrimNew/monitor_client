@@ -28,3 +28,5 @@
 ..\..\obj\main.o: ..\..\lib\inc\stm32f10x_usart.h
 ..\..\obj\main.o: ..\..\lib\inc\stm32f10x_wwdg.h
 ..\..\obj\main.o: ..\..\lib\inc\misc.h
+..\..\obj\main.o: ..\inc\usart.h
+..\..\obj\main.o: ..\inc\delay.h
