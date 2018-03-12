@@ -3,7 +3,7 @@
 ..\..\obj\usart.o: ..\..\lib\inc\stm32f10x_rcc.h
 ..\..\obj\usart.o: ..\boot\stm32f10x.h
 ..\..\obj\usart.o: ..\..\core\core_cm3.h
-..\..\obj\usart.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\obj\usart.o: C:\Program Files\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\obj\usart.o: ..\boot\system_stm32f10x.h
 ..\..\obj\usart.o: ..\boot\stm32f10x_conf.h
 ..\..\obj\usart.o: ..\..\lib\inc\stm32f10x_adc.h

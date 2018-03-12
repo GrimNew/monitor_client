@@ -1,20 +1,19 @@
 #include <delay.h>
 
-__IO uint32_t Delay_Count;
+__IO uint32_t Delay_Count;//
 
 void delay_Init(void)
 {
-	Delay_Count = 0;
-	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);
-	SysTick_Config(9000);
-}
-
-void delay_nus(uint16_t nus)
-{
-	Delay_Count = 9 * nus;
+	Delay_Count = 0;//
+	SysTick->LOAD = 9000 - 1;//
+	NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);//
 }
 
 void delay_nms(uint32_t nms)
 {
-	Delay_Count = 9000 * nms;
+	Delay_Count = nms;//
+	SysTick->VAL = 0x00;//
+	SysTick->CTRL = 0x03;//
+	while(Delay_Count != 0);//
+	SysTick->CTRL = 0x00;//
 }

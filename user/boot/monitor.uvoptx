@@ -82,47 +82,22 @@
         <Book>
           <Number>0</Number>
           <Title>Base Board Schematics (MCBSTM32E)</Title>
-          <Path>C:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Documents\mcbstm32e-base-board-schematics.pdf</Path>
+          <Path>C:\Program Files\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Documents\mcbstm32e-base-board-schematics.pdf</Path>
         </Book>
         <Book>
           <Number>1</Number>
           <Title>Display Board Schematics (MCBSTM32E)</Title>
-          <Path>C:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Documents\mcbstm32e-display-board-schematics.pdf</Path>
+          <Path>C:\Program Files\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Documents\mcbstm32e-display-board-schematics.pdf</Path>
         </Book>
         <Book>
           <Number>2</Number>
           <Title>User Manual (MCBSTM32E)</Title>
-          <Path>C:\Program Files\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Documents\mcbstm32e.chm</Path>
+          <Path>C:\Program Files\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Documents\mcbstm32e.chm</Path>
         </Book>
         <Book>
           <Number>3</Number>
-          <Title>User Manual (NUCLEO-F103RB)</Title>
-          <Path>C:\Program Files\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105823.pdf</Path>
-        </Book>
-        <Book>
-          <Number>4</Number>
-          <Title>Overview (NUCLEO-F103RB)</Title>
-          <Path>C:\Program Files\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105918.pdf</Path>
-        </Book>
-        <Book>
-          <Number>5</Number>
-          <Title>Getting started (NUCLEO-F103RB)</Title>
-          <Path>C:\Program Files\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\DM00105928.pdf</Path>
-        </Book>
-        <Book>
-          <Number>6</Number>
-          <Title>Schematics (NUCLEO-F103RB)</Title>
-          <Path>C:\Program Files\Keil_v5\ARM\PACK\Keil\STM32NUCLEO_BSP\1.6.0\Documents\MB1136.pdf</Path>
-        </Book>
-        <Book>
-          <Number>7</Number>
           <Title>MCBSTM32E Evaluation Board Web Page (MCBSTM32E)</Title>
           <Path>http://www.keil.com/mcbstm32e/</Path>
-        </Book>
-        <Book>
-          <Number>8</Number>
-          <Title>STM32 Nucleo board (NUCLEO-F103RB)</Title>
-          <Path>http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF259875</Path>
         </Book>
       </Books>
       <DebugOpt>
@@ -146,7 +121,7 @@
         <sRSysVw>1</sRSysVw>
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
-        <sLrtime>0</sLrtime>
+        <sLrtime>1</sLrtime>
         <nTsel>0</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
@@ -218,6 +193,18 @@
       <Lin2Executable></Lin2Executable>
       <Lin2ConfigFile></Lin2ConfigFile>
       <bLin2Auto>0</bLin2Auto>
+      <LogicAnalyzers>
+        <Wi>
+          <IntNumber>0</IntNumber>
+          <FirstString>((GPIOA_IDR &amp; 0x00000100) &gt;&gt; 8 &amp; 0x100) &gt;&gt; 8</FirstString>
+          <SecondString>FF0000000000000000000000000000000000F03F00000000000000000000000000000000284750494F415F4944522026203078303030303031303029203E3E20380000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000000000000000E03F1500000000000000000000000000000000000000B4060008</SecondString>
+        </Wi>
+        <Wi>
+          <IntNumber>1</IntNumber>
+          <FirstString>((GPIOD_IDR &amp; 0x00000004) &gt;&gt; 2 &amp; 0x4) &gt;&gt; 2</FirstString>
+          <SecondString>008000000000000000000000000000000000F03F00000000000000000000000000000000284750494F445F4944522026203078303030303030303429203E3E20320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000002000000000000000000E03F1500000000000000000000000000000000000000B4060008</SecondString>
+        </Wi>
+      </LogicAnalyzers>
     </TargetOption>
   </Target>
 
@@ -231,7 +218,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
@@ -608,6 +595,18 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\src\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>31</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\src\led.c</PathWithFileName>
+      <FilenameWithoutPath>led.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

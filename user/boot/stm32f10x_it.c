@@ -136,8 +136,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
-	while(Delay_Count != 0)
-		Delay_Count--;
+	Delay_Count--;
 }
 
 /******************************************************************************/

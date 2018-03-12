@@ -2,7 +2,7 @@
 ..\..\obj\delay.o: ..\inc\delay.h
 ..\..\obj\delay.o: ..\boot\stm32f10x.h
 ..\..\obj\delay.o: ..\..\core\core_cm3.h
-..\..\obj\delay.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\obj\delay.o: C:\Program Files\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\obj\delay.o: ..\boot\system_stm32f10x.h
 ..\..\obj\delay.o: ..\boot\stm32f10x_conf.h
 ..\..\obj\delay.o: ..\..\lib\inc\stm32f10x_adc.h
