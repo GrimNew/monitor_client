@@ -1,5 +1,6 @@
 ..\..\obj\led.o: ..\src\led.c
 ..\..\obj\led.o: ..\inc\led.h
+..\..\obj\led.o: ..\..\lib\inc\stm32f10x_gpio.h
 ..\..\obj\led.o: ..\boot\stm32f10x.h
 ..\..\obj\led.o: ..\..\core\core_cm3.h
 ..\..\obj\led.o: C:\Program Files\Keil\ARM\ARMCC\Bin\..\include\stdint.h

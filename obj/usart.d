@@ -30,3 +30,4 @@
 ..\..\obj\usart.o: ..\..\lib\inc\stm32f10x_usart.h
 ..\..\obj\usart.o: ..\..\lib\inc\stm32f10x_wwdg.h
 ..\..\obj\usart.o: ..\..\lib\inc\misc.h
+..\..\obj\usart.o: C:\Program Files\Keil\ARM\ARMCC\Bin\..\include\stdio.h

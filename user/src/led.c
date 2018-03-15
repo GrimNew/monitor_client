@@ -1,21 +1,10 @@
 #include <led.h>
-void led_Init(){
-	GPIO_InitTypeDef GPIO_InitStruct;
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-//  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOD, ENABLE);//
-
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_8;
-  GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;//
-  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOA, &GPIO_InitStruct);
-//	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_2;
-//	GPIO_Init(GPIOD, &GPIO_InitStruct);
-}
-
-//
+/*
+LED闪烁，心跳表征MCU内程序正常运行
+*/
 void led_Flash(){
 	GPIO_SetBits(GPIOA ,GPIO_Pin_8);
-	delay_nms(200);
+	delay_nms(500);
 	GPIO_ResetBits(GPIOA ,GPIO_Pin_8);
 //	GPIO_SetBits(GPIOD ,GPIO_Pin_2);
 //	delay_nms(1000);

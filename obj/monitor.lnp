@@ -30,6 +30,10 @@
 "..\..\obj\usart.o"
 "..\..\obj\delay.o"
 "..\..\obj\led.o"
+"..\..\obj\gpio.o"
+"..\..\obj\rcc.o"
+"..\..\obj\adc.o"
+"..\..\obj\dma.o"
 --library_type=microlib --strict --scatter "..\..\obj\monitor.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
